@@ -66,8 +66,11 @@ RUN make -j2
 RUN make install
 RUN ln -s ${NGINX_ROOT}/sbin/nginx /usr/local/sbin/nginx
 
+COPY nginx.conf /nginx/conf/nginx.conf
+
 # ***** MISC *****
 WORKDIR ${WEB_DIR}
+
 EXPOSE 80 443
 
 # ***** CLEANUP *****
