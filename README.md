@@ -1,19 +1,9 @@
 # docker-nchan
 NCHAN dockerized on ubuntu
 
-#### build
-```
-docker build -t nchan .
-```
-
 #### run
 ```
-docker run -it -p 4000:80 --name nchan nchan
-```
-
-#### start
-```
-docker start nchan
+docker run -d -p 4000:80 --name nchan iamaroot/nchan
 ```
 
 #### server test
